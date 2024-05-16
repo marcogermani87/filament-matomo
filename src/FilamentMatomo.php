@@ -2,10 +2,11 @@
 
 namespace MarcoGermani87\FilamentMatomo;
 
+use Filament\Contracts\Plugin;
 use Filament\Panel;
 use Filament\View\PanelsRenderHook;
 
-class FilamentMatomo
+class FilamentMatomo implements Plugin
 {
     public function getId(): string
     {
@@ -16,7 +17,7 @@ class FilamentMatomo
     {
         $panel->renderHook(
             PanelsRenderHook::BODY_END,
-            fn () => view('filament-matomo::tracker'),
+            fn () => view('filament-matomo::tracking'),
         );
     }
 

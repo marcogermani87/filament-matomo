@@ -21,7 +21,7 @@ class FilamentMatomoServiceProvider extends PackageServiceProvider
             ->name('filament-matomo')
             ->hasConfigFile()
             ->hasViews()
-            ->hasViewComposer('filament-cookie-consent::index', function (View $view) {
+            ->hasViewComposer('filament-matomo::tracking', function (View $view) {
                 $config = config('filament-matomo');
                 $canShow = $config['enabled'] &&
                     ! empty($config['base_url']) &&
