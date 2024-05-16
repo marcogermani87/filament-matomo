@@ -24,13 +24,13 @@ class FilamentMatomoServiceProvider extends PackageServiceProvider
             ->hasViewComposer('filament-cookie-consent::index', function (View $view) {
                 $config = config('filament-matomo');
                 $canShow = $config['enabled'] &&
-                    !empty($config['base_url']) &&
-                    !empty($config['tracker_filename']) &&
-                    !empty($config['site_id']);
+                    ! empty($config['base_url']) &&
+                    ! empty($config['tracker_filename']) &&
+                    ! empty($config['site_id']);
                 $view->with(compact(
                     'config',
                     'canShow',
                 ));
-            });;
+            });
     }
 }

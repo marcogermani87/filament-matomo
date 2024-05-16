@@ -16,7 +16,7 @@ class FilamentMatomo
     {
         $panel->renderHook(
             PanelsRenderHook::BODY_END,
-            fn() => view('filament-matomo::tracker'),
+            fn () => view('filament-matomo::tracker'),
         );
     }
 
