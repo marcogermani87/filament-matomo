@@ -14,7 +14,7 @@ A package to easily include Matomo tracker in [Filament](https://filamentphp.com
 | Plugin  | Filament | Laravel | PHP |
 | ------------- | ------------- | ------------- | -------------|
 | 1.x  | 3.x  | 10.x | 8.x |
-| 1.x  | 3.x  | 11.x | 8.2 \| 8.3 |
+| 1.x  | 3.x  | 11.x \| 12.x | 8.2 \| 8.3 \| 8.4 |
 ## Installation
 
 You can install the package via composer:
